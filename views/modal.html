@@ -1,0 +1,33 @@
+<!-- Modal content-->
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+          {{if eq .ModalType "A" }}
+     <h4 class="modal-title">This is Modal Type A!</h4>
+      {{end}}
+
+      {{if eq .ModalType "B" }}
+      <h4 class="modal-title">This is Modal Type B!</h4>
+      {{end}}
+
+      {{if eq .ModalType "C" }}
+      <h4 class="modal-title">This is Modal Type C!</h4>
+      {{end}}
+    </div>
+    <div class="modal-body">
+      {{if eq .ModalType "A" }}
+      <p>This is Modal Type A!</p>
+      {{end}}
+      {{if eq .ModalType "B" }}
+      <p>This is Modal Type B!</p>
+      {{end}}
+      {{if eq .ModalType "C" }}
+      <p>This is Modal Type C!</p>
+      {{end}}
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
